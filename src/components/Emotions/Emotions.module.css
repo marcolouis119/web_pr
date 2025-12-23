@@ -1,0 +1,90 @@
+.emotionSection {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.emotionTitle {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2d3748;
+}
+
+.emotionCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.emotionCard {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.emotionCard:nth-child(2) {
+    background: linear-gradient(135deg, #fbf8cc 0%, #f9cf8a 100%);
+}
+
+.emotionCard:nth-child(3) {
+    background: linear-gradient(135deg, #b8e986 0%, #8bd3d3 100%);
+}
+
+.emotionImage {
+    margin-bottom: 20px;
+}
+
+.emotionImage img {
+    max-width: 150px;
+    height: auto;
+}
+
+.emotionCardTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.emotionColors {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.colorOption {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.colorOption:hover {
+    transform: scale(1.1);
+}
+
+.emotionFooter {
+    text-align: center;
+    color: #6b7280;
+}
+
+.link {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
