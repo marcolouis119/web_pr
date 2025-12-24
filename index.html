@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Ideal Walk Starts With Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Узнать настроение</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">О проекте</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Все маршруты</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Поддержать нас</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline" id="register-btn">Регистрация</a>
+                <a href="#" class="btn btn-primary" id="login-btn">Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Ваша идеальная прогулка начинается с нас</h1>
+                <p class="hero-subtitle">Где ваши улицы одиночества будут сегодня?</p>
+                <a href="#" class="btn btn-primary btn-large" id="start-walk-btn">Начать прогулку</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.jpg" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-content">
+                <h2 class="features-title">Сложные алгоритмы, современные технологии и ваше <span class="highlight">умиротворение</span></h2>
+            </div>
+            <div class="features-stats">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="stat-value" id="users-count">2,245,341</div>
+                    <div class="stat-label">Пользователь</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="stat-value" id="communities-count">46,328</div>
+                    <div class="stat-label">Содружеств</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="stat-value" id="routes-count">828,867</div>
+                    <div class="stat-label">Вариантов маршрутов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="stat-value" id="donations-count">1,926,436</div>
+                    <div class="stat-label">Рублей собрано</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="map-title">Наведите на ваш город, чтобы узнать о нем подробнее</h2>
+            <div class="map-container">
+                <img src="images/map.jpg" alt="Map of Russia" id="map-img">
+                <div class="city-tooltip" id="city-tooltip"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emotion Selection Section -->
+    <section class="emotion-section">
+        <div class="container">
+            <h2 class="emotion-title">Настройтесь на нужную эмоцию</h2>
+            <div class="emotion-cards" id="emotion-cards">
+                <!-- Карточки эмоций будут добавлены динамически -->
+            </div>
+            <p class="emotion-footer">Можно пройти <a href="#" class="link" id="emotion-test-link">тест</a></p>
+        </div>
+    </section>
+
+    <!-- Modal for Walk Start -->
+    <div class="modal" id="walk-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h2>Начать прогулку</h2>
+            <form id="walk-form">
+                <div class="form-group">
+                    <label for="mood">Выберите настроение:</label>
+                    <select id="mood" name="mood" required>
+                        <option value="">Выберите настроение</option>
+                        <option value="angry">Злость</option>
+                        <option value="happy">Радость</option>
+                        <option value="neutral">Нейтральное</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Продолжительность (минут):</label>
+                    <input type="number" id="duration" name="duration" min="10" max="120" value="30" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Начать</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
