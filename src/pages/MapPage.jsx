@@ -83,7 +83,7 @@ const MapPage = () => {
   const [userPosition, setUserPosition] = useState(null);
   const [selectedRoute, setSelectedRoute] = useState(null);
   const [routingControl, setRoutingControl] = useState(null);
-  const [selectedMarker, setSelectedMarker] = useState(null);
+  const [setSelectedMarker] = useState(null);
   const mapRef = useRef(null);
 
   const location = useLocation();

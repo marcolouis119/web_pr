@@ -39,6 +39,10 @@ const EmotionModal = ({ isOpen, onClose, emotion }) => {
           case error.TIMEOUT:
             errorMessage = "Время ожидания запроса геолокации истекло.";
             break;
+          default:
+            console.log('Неизвестная ошибка геолокации:', error.code);
+            break;
+
         }
         setError(errorMessage);
         setLoading(false);
