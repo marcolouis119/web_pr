@@ -25,7 +25,7 @@
 1. Клонируйте репозиторий:
 
    ```bash
-   git clone https://github.com/ваш-username/ваш-репозиторий.git
+   git clone https://github.com/marcolouis119/web_pr/tree/task4
     ```
 
 ### Запуск проекта
@@ -35,4 +35,4 @@
    cd web_pr
    npm install
    npm start
-    ```
+   ```
