@@ -1,0 +1,107 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.emotionInfo {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e6f7ff;
+    border-radius: 8px;
+    color: #1890ff;
+}
+
+.userPositionInfo {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    color: #2e7d32;
+}
+
+.routeInfo {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff3e0;
+    border-radius: 8px;
+    color: #f57c00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clearButton {
+    padding: 5px 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clearButton:hover {
+    background-color: #e64a19;
+}
+
+.loading, .error {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.loading {
+    background-color: #f0f0f0;
+    color: #666;
+}
+
+.error {
+    background-color: #ffebee;
+    color: #f44336;
+}
+
+.mapContainer {
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Скрываем флаг атрибуции Leaflet */
+:global(.leaflet-attribution-flag) {
+  display: none !important;
+}
+
+/* Стили для маршрута */
+.leaflet-routing-container {
+    z-index: 1000;
+}
+
+.leaflet-routing-alt {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.leaflet-routing-alt-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leaflet-routing-alt-item {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.leaflet-routing-alt-item:hover {
+    color: #4CAF50;
+}

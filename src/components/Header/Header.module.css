@@ -1,0 +1,206 @@
+/* src/components/Header/Header.module.css */
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.logoLink:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 24px;
+  transition: all 0.3s ease;
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  background-color: transparent;
+  display: inline-block;
+}
+
+/* Стиль для обычного состояния (зеленая рамка, прозрачная внутри) */
+.navLink {
+  border-color: #4CAF50;
+  color: #4CAF50;
+}
+
+/* Стиль при наведении */
+.navLink:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-color: #4CAF50;
+  color: #4CAF50;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+/* Стиль для активной/текущей страницы */
+.navLink.active {
+  background-color: rgba(76, 175, 80, 0.15);
+  border-color: #4CAF50;
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+/* Эффект нажатия */
+.navLink:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(76, 175, 80, 0.15);
+}
+
+/* Альтернативный вариант с более светлым фоном при наведении */
+.navLink.alt:hover {
+  background-color: rgba(76, 175, 80, 0.05);
+}
+
+/* Вариант с заполнением при наведении */
+.navLink.fill-on-hover:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Вариант с градиентной рамкой */
+.navLink.gradient-border {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(45deg, #4CAF50, #8BC34A) border-box;
+  color: #4CAF50;
+}
+
+.navLink.gradient-border:hover {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(45deg, #4CAF50, #8BC34A) border-box;
+  color: #4CAF50;
+}
+
+/* Стиль для кнопки на главной странице (может быть другим цветом) */
+.navLink.home {
+  border-color: #2196F3;
+  color: #2196F3;
+}
+
+.navLink.home:hover {
+  background-color: rgba(33, 150, 243, 0.1);
+  border-color: #2196F3;
+  color: #2196F3;
+}
+
+/* Стиль для кнопки "Узнать настроение" (может быть другим цветом) */
+.navLink.emotions {
+  border-color: #FF9800;
+  color: #FF9800;
+}
+
+.navLink.emotions:hover {
+  background-color: rgba(255, 152, 0, 0.1);
+  border-color: #FF9800;
+  color: #FF9800;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .leftSection {
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navList {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .navLink {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+  
+  .logo img {
+    height: 35px;
+  }
+  
+  .navLink {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .leftSection {
+    gap: 15px;
+  }
+  
+  .navList {
+    gap: 12px;
+  }
+  
+  .logo img {
+    height: 30px;
+  }
+  
+  .navLink {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}

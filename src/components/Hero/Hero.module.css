@@ -1,0 +1,48 @@
+.hero {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.heroContent {
+    flex: 1;
+}
+
+.heroTitle {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #2d3748;
+}
+
+.heroSubtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.heroImage {
+    flex: 1;
+    text-align: center;
+}
+
+.heroImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.geolocationError {
+    color: #e53e3e;
+    margin-top: 15px;
+    text-align: center;
+}
