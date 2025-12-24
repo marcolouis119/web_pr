@@ -28,7 +28,7 @@
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/marcolouis119/web_pr/tree/task5
+git clone https://github.com/marcolouis119/web_pr/tree/1.0
 web_pr
 ```
 ### 2. Установка и запуск
