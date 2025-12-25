@@ -4,7 +4,7 @@
 
 ## Приложение доступно в Dorcel:
 
-https://webpr2-marcolouis119s-projects.vercel.app/
+https://webpr2.vercel.app?_vercel_share=ZOda0DV4LyAj6U6tAYXFwBrwW3QRWvHD
 
 ## О проекте
 
